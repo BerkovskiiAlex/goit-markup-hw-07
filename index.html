@@ -21,7 +21,7 @@
   <body>
     <!-- Top line -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo link"
@@ -56,8 +56,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-nav-t">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-modal-close"></use>
+            </svg>
+          </button>
+          <ul class="mob-navigation-list list">
+            <li>
+              <a href="./index.html" class="mob-nav-link link" target="_blank"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mob-nav-link link">Portfolio</a>
+            </li>
+            <li><a href="" class="mob-nav-link link">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="mob-nav-b">
+          <ul class="mob-adress-nav list">
+            <li>
+              <a href="tel:+110001111111" class="mob-adress-list link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-adress-list-mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-team-social-list">
+            <li class="team-socials-item">
+              <a href="" class="team-social-link"
+                ><svg width="24" height="24" class="team-social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-socials-item">
+              <a href="" class="team-social-link"
+                ><svg width="24" height="24" class="team-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-socials-item">
+              <a href="" class="team-social-link"
+                ><svg width="24" height="24" class="team-social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-socials-item">
+              <a href="" class="team-social-link"
+                ><svg width="24" height="24" class="team-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!-- Hero image -->
@@ -468,7 +539,7 @@
       </div>
     </footer>
     <!-- --------------Backdrop & Modal------------ -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="form">
           <p class="modal-form-text">
@@ -542,8 +613,8 @@
         </button>
         <form class="modal-form"></form>
       </div>
-    </div> -->
-
-    <!-- <script src="./js/modal.js"></script> -->
+    </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
