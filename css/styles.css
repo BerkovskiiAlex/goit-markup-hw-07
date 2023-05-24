@@ -878,7 +878,7 @@ img {
 }
 
 .modal {
-  width: 408px;
+  width: 100%;
   min-height: 576px;
   background-color: #FCFCFC;
   border-radius: 4px;
@@ -1091,8 +1091,11 @@ img {
   .container {
     max-width: 428px;
   }
-}
 
+  .modal {
+    width: 392px;
+  }
+}
 
 /* ------------------------768px----------------------- */
 
@@ -1235,6 +1238,10 @@ img {
 
   .logo {
     margin-right: 120px;
+  }
+
+  .modal {
+    width: 408px;
   }
 }
 
